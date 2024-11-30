@@ -27,7 +27,7 @@ const Section1 = () => {
 
   return (
     <>
-      <div className="h-[734px] bg-section1 bg-cover pt-[70px] pb-[30px]">
+      <div className="h-[734px] bg-section1 bg-cover pt-[70px] pb-[30px]" id="organizers">
         <div className="container mx-auto">
           <div className="w-[521px] h-[321px] truncate mx-auto">
             <img 

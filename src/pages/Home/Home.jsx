@@ -3,6 +3,8 @@ import Section1 from "./sections/Section1"
 import Section2 from "./sections/Section2"
 import Section3 from "./sections/Section3"
 import Section5 from "./sections/Section5"
+import Section6 from "./sections/Section6"
+import Section7 from "./sections/Section7"
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
           <Section3 />
           <OnlineBroadcast />
           <Section5 />
+          <Section6 />
+          <Section7 />
         </div>
       </div>
     </>

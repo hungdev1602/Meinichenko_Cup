@@ -18,7 +18,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'section1': "url('/images/bg-1.png')"
+        'section1': "url('/images/bg-1.png')",
+        'footer': "url('/images/footer.png')",
       },
       colors: {
         primary: "#00234A",

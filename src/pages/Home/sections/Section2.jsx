@@ -33,10 +33,9 @@ const Section2 = () => {
   ]
   return (
     <>
-      <div className="mt-[40px]">
+      <div className="mt-[40px]" id="program">
         <div className="text-center text-[48px] font-[700] font-actay">Программа фестиваля</div>
-        <div className="text-center text-[24px] font-[700] font-actay mt-[20px]">Кубок Мельниченко</div>
-        <div className="text-center text-[24px] font-[400] mt-[8px]">Командное спортивное соревнование для сотрудников предприятий СУЭК/СГК и их семей</div>
+        <div className="text-center text-[24px] font-[400] mt-[8px]">"Кубок Мельниченко" — это командное спортивное соревнование для сотрудников предприятий СУЭК/СГК и их семей</div>
 
         <div className="mt-[33px] grid grid-cols-2 gap-[20px]">
           {data.map((item, index) => 

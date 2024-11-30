@@ -1,0 +1,29 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+const TeamInfoType2 = (props) => {
+  const {
+    title,
+    team,
+    img = null,
+    check = false,
+    checkImg = false
+  } = props;
+
+  const css = check ? "text-[24px] font-[700] font-actay absolute bottom-[14px]" : "text-[24px] font-[700] font-actay mt-[88px]";
+  const cssImg = checkImg ? "w-[82px] h-[82px] absolute bottom-[5px] right-[10px]" : "w-[82px] h-[82px] absolute top-0 right-[10px]";
+  return (
+    <>
+      <div className="p-[15px] rounded-[10px] border border-[#FF5200] relative">
+        <div className="text-[14px] font-[400]">{title}</div>
+        <div className={css}>{team}</div>
+
+        {
+          img && <img src={img} alt="" className={cssImg}/>
+        }
+        
+      </div>
+    </>
+  )
+}
+
+export default TeamInfoType2

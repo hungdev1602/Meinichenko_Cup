@@ -5,7 +5,7 @@ import { SlSocialVkontakte } from "react-icons/sl";
 const OnlineBroadcast = () => {
   return (
     <>
-      <div className="mt-[30px]">
+      <div className="mt-[30px] mb-[130px]" id="broadcast">
         <div className="text-[48px] font-[700] font-actay text-center uppercase mb-[30px]">смотрите онлайн трансляцию фестивля в vk</div>
 
         <iframe src="https://vk.com/video_ext.php?oid=-22822305&id=456241864&hd=2" width="1160" height="545" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>

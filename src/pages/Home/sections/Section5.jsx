@@ -50,7 +50,7 @@ const Section5 = () => {
   ]
   return (
     <>
-      <div className="mt-[130px]">
+      <div className="mt-[130px]" id="schedule">
         <div className="uppercase text-center text-[48px] font-[700] font-actay">расписание фестиваля</div>
 
         <div className="mt-[63px] grid grid-cols-2 gap-[20px]">
