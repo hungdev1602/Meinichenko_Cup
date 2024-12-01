@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import logo from "/images/logo.svg"
+import { RxHamburgerMenu } from "react-icons/rx";
+
 const Header = () => {
   const data = [
     {
@@ -31,27 +33,35 @@ const Header = () => {
 
   return (
     <>
-      <div className="mt-[17px] border border-[#FF5200] rounded-[10px] py-[9px] pl-[15px] flex items-center">
-        <Link to="/">
+      <div className="mx-auto sm:mx-0 mt-[17px] pr-[10px] md:pr-[0px] border border-[#FF5200] rounded-[10px] py-[15px] pl-[15px] flex items-center justify-between sm:justify-normal">
+        <NavLink to="/" className="w-[55px] md:w-[70px] lg:w-[100px] h-auto mr-[20px] md:mr-[80px] lg:mr-[132px]">
           <img 
             src={logo} 
             alt="" 
-            className="w-[52px] h-[60px] mr-[132px]"
+            className="w-full h-full object-cover"
           />
-        </Link>
+        </NavLink>
 
-        <div className="flex items-center gap-[26px]">
+        <div className="hidden sm:flex items-center gap-[26px]">
           {data.map((item, index) => (
-            <Link 
+            <NavLink 
               key={index} 
               to={item.href}
-              onClick={() => window.scrollTo({ top: document.querySelector(item.href).offsetTop, behavior: 'smooth' })}
-              className="text-[16px]"
+              onClick={(e) => {
+                if (item.href.startsWith("#")) {
+                  e.preventDefault();
+                  window.scrollTo({ top: document.querySelector(item.href).offsetTop, behavior: 'smooth' });
+                }
+              }}
+              className="text-[9px] md:text-[11px] lg:text-[16px]"
             >
               {item.title}
-            </Link>
+            </NavLink>
           ))}
         </div>
+        <div className="h-[32px] w-[32px] bg-[#FF5200] rounded-full flex items-center justify-center cursor-pointer sm:hidden">
+            <RxHamburgerMenu />
+          </div>
       </div>
     </>
   )

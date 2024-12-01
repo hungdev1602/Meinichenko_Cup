@@ -10,6 +10,7 @@ export default {
       'actay': ['Actay', 'sans-serif'],
     },
     screens: {
+      "xs": "350px",
       "sm": "576px",
       "md": "768px",
       "lg": "992px",

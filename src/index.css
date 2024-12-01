@@ -7,7 +7,11 @@
   src: url('/fonts/ActayWide-Bold.otf');
 }
 
+html{
+  overflow-x: hidden;
+}
 body{
   background: #00234A;
   color: #fff;
+  overflow-x: hidden;
 }

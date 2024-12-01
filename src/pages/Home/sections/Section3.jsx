@@ -8,29 +8,29 @@ const Section3 = () => {
       text: "3х3 футбол",
     },
     {
-      id: "03/",
+      id: "04/",
       text: "футбольный челлендж",
     },
     {
-      id: "04/",
+      id: "06/",
       text: "футбольный булит",
     },
     {
-      id: "05/",
+      id: "08/",
       text: "битва вратарей",
     }
   ]
   const dataCol3 = [
     {
-      id: "07/",
+      id: "03/",
       text: "2х2 футбол",
     },
     {
-      id: "08/",
+      id: "05/",
       text: "Теннис-болл",
     },
     {
-      id: "09/",
+      id: "07/",
       text: "Полоса препятствий",
     },
     {
@@ -40,17 +40,18 @@ const Section3 = () => {
   ]
   return (
     <>
-      <div className="mt-[130px] mb-[130px]">
-        <div className="text-[48px] font-[700] font-actay text-center mb-[30px]">Дисциплины</div>
+      <div className="mt-[80px] sm:mt-[130px]">
+        <div className="text-[24px] sm:text-[48px] font-[700] font-actay text-center mb-[30px]">Дисциплины</div>
 
-        <div className="grid grid-cols-4 gap-[20px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[10px] lg:gap-[20px]">
           {/* Col 1 */}
           <div className="flex flex-col gap-[20px]">
             <DisiplineItem
               id={"01/"}
               text={"5х5 футбол"}
+              style={"mb-[-18px] sm:mb-[-10px]"}
             />
-            <div className="w-[275px h-[253px] rounded-[10px] truncate">
+            <div className="w-full h-[110px] sm:h-[253px] rounded-[10px] truncate">
               <img src={disipline1} alt="" className="w-full h-full object-cover"/>
             </div>
           </div>
@@ -62,18 +63,18 @@ const Section3 = () => {
                   key={index}
                   id={item.id}
                   text={item.text}
-                  style={(item.id === "03/" ? "mb-[-18px]" : item.id === "04/" ? "mb-[-18px]" : "mb-[-10px]")}
+                  style={(item.id === "04/" ? "mb-[-18px]" : item.id === "06/" ? "mb-[-18px]" : "mb-[-10px]")}
                 />
               ))
             }
           </div>
           {/* Col 3 */}
           <div className="flex flex-col gap-[20px]">
-            <div className="w-[275px h-[253px] rounded-[10px] truncate">
+            <div className="w-full h-[110px] sm:h-[253px] rounded-[10px] truncate">
               <img src={disipline2} alt="" className="w-full h-full object-cover"/>
             </div>
             <DisiplineItem
-              id={"06/"}
+              id={"09/"}
               text={"VR zone"}
             />
           </div>
@@ -85,7 +86,7 @@ const Section3 = () => {
                   key={index}
                   id={item.id}
                   text={item.text}
-                  style={(item.id === "09/" ? "mb-[-18px]" : item.id === "10/" ? "mb-[-18px]" : "mb-[-10px]")}
+                  style={(item.id === "07/" ? "mb-[-18px]" : item.id === "10/" ? "mb-0 lg:mb-[-18px]" : "mb-[-10px]")}
                 />
               ))
             }

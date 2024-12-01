@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import ItemInfo from "../components/ItemInfo"
 import Mask1 from "/images/Mask_1.png"
@@ -16,7 +17,8 @@ const Section2 = () => {
       id: "02",
       img: Mask2,
       title: "Звездный матч ",
-      text: "От бывших игроков РПЛ и Футбольной Медиа Лиги"
+      text: `От бывших игроков РПЛ 
+      и Футбольной Медиа Лиги`
     },
     {
       id: "03",
@@ -33,11 +35,11 @@ const Section2 = () => {
   ]
   return (
     <>
-      <div className="mt-[40px]" id="program">
-        <div className="text-center text-[48px] font-[700] font-actay">Программа фестиваля</div>
-        <div className="text-center text-[24px] font-[400] mt-[8px]">"Кубок Мельниченко" — это командное спортивное соревнование для сотрудников предприятий СУЭК/СГК и их семей</div>
+      <div className="mt-[30px] sm:mt-[90px] lg:mt-[130px]" id="program">
+        <div className="text-center text-[24px] sm:text-[40px] md:text-[48px] font-[700] font-actay">Программа фестиваля</div>
+        <div className="hidden sm:block text-center text-[14px] md:text-[24px] font-[400] mt-[8px]">"Кубок Мельниченко" — это командное спортивное соревнование для сотрудников предприятий СУЭК/СГК и их семей</div>
 
-        <div className="mt-[33px] grid grid-cols-2 gap-[20px]">
+        <div className="mt-[20px] sm:mt-[33px] grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
           {data.map((item, index) => 
             <ItemInfo 
               key={index} 

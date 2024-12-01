@@ -50,31 +50,31 @@ const Section5 = () => {
   ]
   return (
     <>
-      <div className="mt-[130px]" id="schedule">
-        <div className="uppercase text-center text-[48px] font-[700] font-actay">расписание фестиваля</div>
+      <div className="mt-[80px] sm:mt-[130px]" id="schedule">
+        <div className="uppercase text-center text-[32px] md:text-[48px] font-[700] font-actay">расписание фестиваля</div>
 
-        <div className="mt-[63px] grid grid-cols-2 gap-[20px]">
-          <div className="border border-[#FF5200] px-[32px] py-[68px] rounded-[20px] relative">
+        <div className="mt-[63px] grid grid-cols-1 lg:grid-cols-2 gap-[45px] lg:gap-[20px]">
+          <div className="border border-[#FF5200] pr-0 pl-[15px] sm:px-[32px] pt-[50px] lg:pt-[68px] pb-[10px] rounded-[20px] relative">
             {
               schedule1.map((item, index) => (
-                <div className="flex items-center gap-[28px] mb-[20px]" key={index}>
+                <div className="flex items-center gap-[8px] sm:gap-[28px] mb-[20px] text-[11px] sm:text-[13px] lg:text-[16px]" key={index}>
                   <span className="">{item.time}</span>
                   <span className="">{item.title}</span>
                 </div>
               ))
             }
-            <div className="text-[24px] font-[700] font-actay py-[10px] px-[34px] bg-[#FF5200] absolute rounded-[10px] top-[-30px] left-[178px]">14 декабря</div>
+            <div className="text-[14px] sm:text-[24px] font-[700] font-actay py-[10px] px-[34px] bg-[#FF5200] absolute rounded-[10px] top-[-30px] left-[103px] sm:left-[175px] md:left-[285px] lg:left-[140px] xl:left-[178px]">14 декабря</div>
           </div>
-          <div className="border border-[#FF5200] px-[32px] py-[68px] rounded-[20px] relative">
+          <div className="border border-[#FF5200] pr-0 pl-[15px] sm:px-[32px] pt-[50px] lg:pt-[68px] pb-[10px] rounded-[20px] relative">
             {
               schedule2.map((item, index) => (
-                <div className="flex items-center gap-[28px] mb-[20px]" key={index}>
+                <div className="flex items-center gap-[8px] sm:gap-[28px] mb-[20px] text-[11px] sm:text-[13px] lg:text-[16px]" key={index}>
                   <span className="">{item.time}</span>
                   <span className="">{item.title}</span>
                 </div>
               ))
             }
-            <div className="text-[24px] font-[700] font-actay py-[10px] px-[34px] bg-[#FF5200] absolute rounded-[10px] top-[-30px] left-[178px]">15 декабря</div>
+            <div className="text-[14px] sm:text-[24px] font-[700] font-actay py-[10px] px-[34px] bg-[#FF5200] absolute rounded-[10px] top-[-30px] left-[103px] sm:left-[175px] md:left-[285px] lg:left-[140px] xl:left-[178px]">15 декабря</div>
           </div>
         </div>
       </div>
