@@ -1,12 +1,26 @@
 /* eslint-disable no-undef */
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { LiaTelegramPlane } from "react-icons/lia";
 import { SlSocialVkontakte } from "react-icons/sl";
 import logo_footer from "/images/logo.svg"
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
+  const navigate = useNavigate()
   const [width, setWidth] = React.useState(window.innerWidth);
   const [size, setSize] = React.useState(70);
+
+  const handleScrollToSection = (e, href) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      // Chuyển hướng về trang chính
+      navigate("/");
+      // Sử dụng setTimeout để đảm bảo rằng việc cuộn diễn ra sau khi chuyển hướng
+      setTimeout(() => {
+        window.scrollTo({ top: document.querySelector(href).offsetTop, behavior: 'smooth' });
+      }, 100); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
+    }
+  };
 
   React.useEffect(() => {
     const handleResize = () => {
@@ -44,24 +58,53 @@ const Footer = () => {
             <div className="flex gap-[120px] md:gap-[20px] lg:gap-[90px]">
               <ul>
                 <li>
-                  <Link to="#program" onClick={() => window.scrollTo({ top: document.querySelector('#program').offsetTop, behavior: 'smooth' })}>Программа</Link>
+                  <NavLink 
+                    to="#program" 
+                    onClick={(e) => handleScrollToSection(e, "#program")}
+                  >
+                    Программа
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="#broadcast" onClick={() => window.scrollTo({ top: document.querySelector('#broadcast').offsetTop, behavior: 'smooth' })}>Трансляция</Link>
+                  <NavLink 
+                    to="#broadcast" 
+                    onClick={(e) => handleScrollToSection(e, "#broadcast")}
+                  >
+                    Трансляция
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="#disciplines" onClick={() => window.scrollTo({ top: document.querySelector('#disciplines').offsetTop, behavior: 'smooth' })}>Дисциплины</Link>
+                  <NavLink 
+                    to="#disciplines" 
+                    onClick={(e) => handleScrollToSection(e, "#disciplines")}
+                  >
+                    Дисциплины
+                  </NavLink>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <Link to="#guests" onClick={() => window.scrollTo({ top: document.querySelector('#guests').offsetTop, behavior: 'smooth' })}>Приглашенные гости</Link>
+                  <NavLink 
+                    to="#guests" 
+                    onClick={(e) => handleScrollToSection(e, "#guests")}
+                  >
+                    Приглашенные гости
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/command">Команды</Link>
+                  <NavLink 
+                    to="/command"
+                  >
+                    Команды
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="#organizers" onClick={() => window.scrollTo({ top: document.querySelector('#organizers').offsetTop, behavior: 'smooth' })}>Организаторы</Link>
+                  <NavLink 
+                    to="#organizers" 
+                    onClick={(e) => handleScrollToSection(e, "#organizers")}
+                  >
+                    Организаторы
+                  </NavLink>
                 </li>
               </ul>
             </div>

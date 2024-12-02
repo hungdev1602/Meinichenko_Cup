@@ -5,7 +5,21 @@ import { IoClose } from "react-icons/io5";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { SlSocialVkontakte } from "react-icons/sl";
 import fox from "/images/fox.png"
+import { useNavigate } from 'react-router-dom';
 const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
+  const navigate = useNavigate()
+  const handleScrollToSection = (e, href) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      // Chuyển hướng về trang chính
+      navigate("/");
+      setOpenBurgerMenu(false)
+      // Sử dụng setTimeout để đảm bảo rằng việc cuộn diễn ra sau khi chuyển hướng
+      setTimeout(() => {
+        window.scrollTo({ top: document.querySelector(href).offsetTop, behavior: 'smooth' });
+      }, 100); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
+    }
+  };
   return (
     <>
       <div className={"fixed top-0 left-0 right-0 bg-[#00234A] h-full z-[9999] pt-[10px] transition duration-800 " + (openBurgerMenu ? "visible opacity-100" : "invisible opacity-0")}>
@@ -34,10 +48,7 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
               <li className="">
                 <NavLink
                   to={'#organizers'}
-                  onClick={() => {
-                    setOpenBurgerMenu(false)
-                    window.scrollTo({ top: document.querySelector('#organizers').offsetTop, behavior: 'smooth' });
-                  }}
+                  onClick={(e) => handleScrollToSection(e, '#organizers')}
                 >
                   Организаторы
                 </NavLink>
@@ -45,9 +56,7 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
               <li className="">
                 <NavLink
                   to={'/command'}
-                  onClick={() => {
-                    setOpenBurgerMenu(false)
-                  }}
+                  onClick={() => setOpenBurgerMenu(false)}
                 >
                   Команды
                 </NavLink>
@@ -55,10 +64,7 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
               <li className="">
                 <NavLink
                   to={'#program'}
-                  onClick={() => {
-                    setOpenBurgerMenu(false)
-                    window.scrollTo({ top: document.querySelector('#program').offsetTop, behavior: 'smooth' });
-                  }}
+                  onClick={(e) => handleScrollToSection(e, '#program')}
                 >
                   О фестивале
                 </NavLink>
@@ -66,10 +72,7 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
               <li className="">
                 <NavLink
                   to={'#broadcast'}
-                  onClick={() => {
-                    setOpenBurgerMenu(false)
-                    window.scrollTo({ top: document.querySelector('#broadcast').offsetTop, behavior: 'smooth' });
-                  }}
+                  onClick={(e) => handleScrollToSection(e, '#broadcast')}
                 >
                   Трансляция
                 </NavLink>
@@ -77,10 +80,7 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
               <li className="">
                 <NavLink
                   to={'#schedule'}
-                  onClick={() => {
-                    setOpenBurgerMenu(false)
-                    window.scrollTo({ top: document.querySelector('#schedule').offsetTop, behavior: 'smooth' });
-                  }}
+                  onClick={(e) => handleScrollToSection(e, '#schedule')}
                 >
                   Расписание
                 </NavLink>
@@ -88,10 +88,7 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
               <li className="">
                 <NavLink
                   to={'#guests'}
-                  onClick={() => {
-                    setOpenBurgerMenu(false)
-                    window.scrollTo({ top: document.querySelector('#guests').offsetTop, behavior: 'smooth' });
-                  }}
+                  onClick={(e) => handleScrollToSection(e, '#guests')}
                 >
                   Приглашенные гости
                 </NavLink>

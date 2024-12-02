@@ -122,7 +122,7 @@ const Section3 = () => {
             </div>
             {/* 4 Item */}
             <div className="h-[50px] pl-[10px] pt-[10px] pb-[14px] border border-[#FF5200] rounded-[12px]">
-              <div className="text-[10px] font-[400] text-[#ffffffb8] mb-[-18px]">07/</div>
+              <div className="text-[10px] font-[400] text-[#ffffffb8] mb-[-20px]">07/</div>
               <div className="text-[12px] font-[500] text-center uppercase whitespace-pre-line">{text1}</div>
             </div>
             {/* 5 Item */}

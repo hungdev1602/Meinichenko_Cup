@@ -3,9 +3,10 @@
 import { NavLink } from "react-router-dom"
 import logo from "/images/logo.svg"
 import { RxHamburgerMenu } from "react-icons/rx";
-import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import { useNavigate } from 'react-router-dom';
 
 const Header = ({ setOpenBurgerMenu }) => {
+  const navigate = useNavigate()
   const data = [
     {
       title: "Организаторы",
@@ -32,6 +33,17 @@ const Header = ({ setOpenBurgerMenu }) => {
       href: "#guests"
     },
   ]
+  const handleScrollToSection = (e, href) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      // Chuyển hướng về trang chính
+      navigate("/");
+      // Sử dụng setTimeout để đảm bảo rằng việc cuộn diễn ra sau khi chuyển hướng
+      setTimeout(() => {
+        window.scrollTo({ top: document.querySelector(href).offsetTop, behavior: 'smooth' });
+      }, 100); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
+    }
+  };
 
   return (
     <>
@@ -49,13 +61,8 @@ const Header = ({ setOpenBurgerMenu }) => {
             <NavLink 
               key={index} 
               to={item.href}
-              onClick={(e) => {
-                if (item.href.startsWith("#")) {
-                  e.preventDefault();
-                  window.scrollTo({ top: document.querySelector(item.href).offsetTop, behavior: 'smooth' });
-                }
-              }}
               className="text-[9px] md:text-[11px] lg:text-[16px]"
+              onClick={(e) => handleScrollToSection(e, item.href)}
             >
               {item.title}
             </NavLink>
@@ -73,3 +80,4 @@ const Header = ({ setOpenBurgerMenu }) => {
 }
 
 export default Header
+
