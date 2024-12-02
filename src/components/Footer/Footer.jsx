@@ -35,11 +35,11 @@ const Footer = () => {
   return (
     <>
       <div className="h-[279px] sm:h-[285px] bg-footer bg-cover">
-        <div className="container mx-auto pt-[40px]">
+        <div className="container mx-auto pt-[35px] sm:pt-[40px]">
           <div className="w-[150px] md:w-[200px] lg:w-[230px] h-auto mx-auto">
             <img src={logo_footer} alt="" className="w-full h-full object-cover" />
           </div>
-          <div className="flex justify-between flex-wrap md:flex-nowrap mt-[40px] text-[12px] sm:text-[16px]">
+          <div className="flex justify-between flex-wrap md:flex-nowrap mt-[25px] sm:mt-[40px] text-[12px] sm:text-[16px]">
             {/* Left */}
             <div className="flex gap-[120px] md:gap-[20px] lg:gap-[90px]">
               <ul>
