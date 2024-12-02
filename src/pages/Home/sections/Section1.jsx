@@ -27,9 +27,9 @@ const Section1 = () => {
 
   return (
     <>
-      <div className="h-[420px] sm:h-[680px] md:h-[734px] bg-section1 bg-cover pt-[52px] sm:pt-[70px] pb-[30px]" id="organizers">
+      <div className="h-[470px] sm:h-[680px] md:h-[734px] bg-section1 bg-cover pt-[52px] sm:pt-[70px] pb-[30px]" id="organizers">
         <div className="container mx-auto">
-          <div className="w-[323px] h-[199px] sm:w-[452px] sm:h-[280px] md:w-[500px] md:h-[310px] xl:w-[521px] xl:h-[321px] truncate mx-auto">
+          <div className="w-[323px] h-[199px] sm:w-[452px] sm:h-[280px] md:w-[500px] md:h-[310px] xl:w-[521px] xl:h-[321px] mb-[30px] sm:mb-0 truncate mx-auto">
             <img 
               src={cup} 
               alt="" 
@@ -37,7 +37,7 @@ const Section1 = () => {
             />
           </div>
 
-          <a href="/" className="hidden sm:inline-block mt-[50px] md:mt-[68px] ml-[155px] md:ml-[250px] lg:ml-[350px] xl:ml-[431px] py-[11px] px-[40px] text-[20px] lg:text-[24px] font-[700] border border-white rounded-[15px] font-actay bg-[#11182174]">
+          <a href="/" className="sm:inline-block mt-[50px] md:mt-[68px] ml-[65px] sm:ml-[155px] md:ml-[250px] lg:ml-[350px] xl:ml-[431px] py-[11px] px-[40px] text-[14px] md:text-[20px] lg:text-[24px] font-[700] border border-white rounded-[15px] font-actay bg-[#11182174]">
             получить билет
           </a>
 
@@ -47,7 +47,7 @@ const Section1 = () => {
               <div className="py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px]">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">14-15 <br /> декабря</span>
               </div>
-              <a href="/" className="py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px] relative">
+              <a href="/" className="w-[252px] sm:w-[406px] py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px] relative">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">Кросноярск, <br /> Футбол - Арена “Енисей”</span>
                 <img 
                   src={arrow} 

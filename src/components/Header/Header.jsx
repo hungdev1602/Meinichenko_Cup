@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { NavLink } from "react-router-dom"
 import logo from "/images/logo.svg"
 import { RxHamburgerMenu } from "react-icons/rx";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
-const Header = () => {
+const Header = ({ setOpenBurgerMenu }) => {
   const data = [
     {
       title: "Организаторы",
@@ -14,7 +16,7 @@ const Header = () => {
       href: "/command"
     },
     {
-      title: "Программа",
+      title: "О фестивале",
       href: "#program"
     },
     {
@@ -33,7 +35,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="mx-auto sm:mx-0 mt-[17px] pr-[10px] md:pr-[0px] border border-[#FF5200] rounded-[10px] py-[15px] pl-[15px] flex items-center justify-between sm:justify-normal">
+      <div className="mx-auto sm:mx-0 mt-[10px] sm:mt-[17px] pr-[10px] md:pr-[0px] border border-[#FF5200] rounded-[10px] py-[15px] pl-[15px] flex items-center justify-between sm:justify-normal">
         <NavLink to="/" className="w-[55px] md:w-[70px] lg:w-[100px] h-auto mr-[20px] md:mr-[80px] lg:mr-[132px]">
           <img 
             src={logo} 
@@ -59,9 +61,12 @@ const Header = () => {
             </NavLink>
           ))}
         </div>
-        <div className="h-[32px] w-[32px] bg-[#FF5200] rounded-full flex items-center justify-center cursor-pointer sm:hidden">
-            <RxHamburgerMenu />
-          </div>
+        <div 
+          className="h-[32px] w-[32px] bg-[#FF5200] rounded-full flex items-center justify-center cursor-pointer sm:hidden"
+          onClick={() => setOpenBurgerMenu(true)}
+        >
+          <RxHamburgerMenu />
+        </div>
       </div>
     </>
   )

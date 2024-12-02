@@ -15,7 +15,8 @@ const Section6 = () => {
   const data = [
     {
       img: guest1,
-      name: "Михаил Прокопьев",
+      name: `Михаил 
+      Прокопьев`,
     },
     {
       img: guest2,
@@ -23,7 +24,8 @@ const Section6 = () => {
     },
     {
       img: guest3,
-      name: "Артемий Форзарезор",
+      name: `Артемий 
+      Форзарезор`,
     },
     {
       img: guest4,
@@ -78,7 +80,7 @@ const Section6 = () => {
                 <div className="w-[170px] sm:w-[220px] xl:w-[275px] h-[170px] sm:h-[220px] xl:h-[275px] truncate rounded-full">
                   <img src={item.img} alt="" className={"w-full h-full object-cover "}/>
                 </div>
-                <div className="mt-[20px] w-[150px] text-[14px] sm:text-[24px] font-[700] font-actay text-center mx-auto">{item.name}</div>
+                <div className="mt-[20px] fit-content text-[14px] sm:text-[24px] font-[700] font-actay text-center mx-auto whitespace-pre-line">{item.name}</div>
               </div>
             ))
           }

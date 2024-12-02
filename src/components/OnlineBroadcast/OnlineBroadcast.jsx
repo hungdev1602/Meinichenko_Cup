@@ -50,7 +50,7 @@ const OnlineBroadcast = () => {
     <>
       <div className="mt-[80px] md:mt-[130px] mb-[80px] sm:mb-[130px]" id="broadcast">
         <div className="text-[24px] sm:text-[32px] lg:text-[48px] font-[700] font-actay text-center uppercase mb-[20px] sm:mb-[30px]">
-          смотрите онлайн трансляцию фестивля в vk
+          смотрите онлайн трансляцию фестиваля в vk
         </div>
 
         <iframe
@@ -60,6 +60,9 @@ const OnlineBroadcast = () => {
           allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
           frameBorder="0"
           allowFullScreen
+          style={{
+            borderRadius: "20px",
+          }}
         ></iframe>
         <div className="text-[14px] w-[204px] sm:w-full sm:text-[32px] font-[700] font-actay text-center mt-[20px] sm:mt-[50px] mx-auto sm:mx-0">
           Подписывайтесь на нас в социальных сетях
