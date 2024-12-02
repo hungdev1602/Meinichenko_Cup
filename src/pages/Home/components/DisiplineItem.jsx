@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 
 const DisiplineItem = ({ id, text, style = "mb-0 lg:mb-[-10px]" }) => {
-  if(id == "02/" || id == "09/" || id == "10/"){
+  if(id == "02/" || id == "09/"){
     style = "mb-[-18px] md:mb-[-10px]"
+  }
+  else if(id == "10/"){
+    style = "mb-[-18px] md:mb-[-18px]"
   }
   return (
     <>

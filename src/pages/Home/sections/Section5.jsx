@@ -57,7 +57,7 @@ const Section5 = () => {
           <div className="border border-[#FF5200] pr-0 pl-[15px] sm:px-[32px] pt-[50px] lg:pt-[68px] pb-[10px] rounded-[20px] relative">
             {
               schedule1.map((item, index) => (
-                <div className="flex items-center gap-[8px] sm:gap-[28px] mb-[20px] text-[11px] sm:text-[13px] lg:text-[16px]" key={index}>
+                <div className="flex items-center gap-[8px] sm:gap-[28px] mb-[20px] text-[10px] sm:text-[13px] lg:text-[16px]" key={index}>
                   <span className="">{item.time}</span>
                   <span className="">{item.title}</span>
                 </div>
@@ -68,7 +68,7 @@ const Section5 = () => {
           <div className="border border-[#FF5200] pr-0 pl-[15px] sm:px-[32px] pt-[50px] lg:pt-[68px] pb-[10px] rounded-[20px] relative">
             {
               schedule2.map((item, index) => (
-                <div className="flex items-center gap-[8px] sm:gap-[28px] mb-[20px] text-[11px] sm:text-[13px] lg:text-[16px]" key={index}>
+                <div className="flex items-center gap-[8px] sm:gap-[28px] mb-[20px] text-[10px] sm:text-[13px] lg:text-[16px]" key={index}>
                   <span className="">{item.time}</span>
                   <span className="">{item.title}</span>
                 </div>

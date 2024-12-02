@@ -49,7 +49,7 @@ const OnlineBroadcast = () => {
   return (
     <>
       <div className="mt-[80px] md:mt-[130px] mb-[80px] sm:mb-[130px]" id="broadcast">
-        <div className="text-[24px] sm:text-[32px] lg:text-[48px] font-[700] font-actay text-center uppercase mb-[20px] sm:mb-[30px]">
+        <div className="text-[21px] sm:text-[32px] lg:text-[48px] font-[700] font-actay text-center uppercase mb-[20px] sm:mb-[30px]">
           смотрите онлайн трансляцию фестиваля в vk
         </div>
 

@@ -37,7 +37,7 @@ const Section1 = () => {
             />
           </div>
 
-          <a href="/" className="sm:inline-block mt-[50px] md:mt-[68px] ml-[65px] sm:ml-[155px] md:ml-[250px] lg:ml-[350px] xl:ml-[431px] py-[11px] px-[40px] text-[14px] md:text-[20px] lg:text-[24px] font-[700] border border-white rounded-[15px] font-actay bg-[#11182174]">
+          <a href="https://events.nethouse.ru/kry/115907/" target="_blank" className="sm:inline-block mt-[50px] md:mt-[68px] ml-[65px] sm:ml-[155px] md:ml-[250px] lg:ml-[350px] xl:ml-[431px] py-[11px] px-[40px] text-[14px] md:text-[20px] lg:text-[24px] font-[700] border border-white rounded-[15px] font-actay bg-[#11182174]">
             получить билет
           </a>
 
@@ -47,7 +47,7 @@ const Section1 = () => {
               <div className="py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px]">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">14-15 <br /> декабря</span>
               </div>
-              <a href="/" className="w-[252px] sm:w-[406px] py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px] relative">
+              <a href="/" className="w-[252px] sm:w-[430px] py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px] relative">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">Кросноярск, <br /> Футбол - Арена “Енисей”</span>
                 <img 
                   src={arrow} 
