@@ -50,7 +50,7 @@ const Footer = () => {
                   <Link to="#broadcast" onClick={() => window.scrollTo({ top: document.querySelector('#broadcast').offsetTop, behavior: 'smooth' })}>Трансляция</Link>
                 </li>
                 <li>
-                  <Link to="#" onClick={() => window.scrollTo({ top: document.querySelector('#').offsetTop, behavior: 'smooth' })}>Дисциплины</Link>
+                  <Link to="#disciplines" onClick={() => window.scrollTo({ top: document.querySelector('#disciplines').offsetTop, behavior: 'smooth' })}>Дисциплины</Link>
                 </li>
               </ul>
               <ul>

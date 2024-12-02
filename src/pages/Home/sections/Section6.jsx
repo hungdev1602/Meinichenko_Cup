@@ -67,7 +67,7 @@ const Section6 = () => {
   return (
     <>
       <div className="mt-[80px] sm:mt-[130px] relative" id="guests">
-        <div className="text-[26px] md:text-[48px] font-[700] font-actay text-center uppercase">приглашенные футбольные звезды </div>
+        <div className="text-[23px] md:text-[48px] font-[700] font-actay text-center uppercase">приглашенные футбольные звезды </div>
 
         <div className="text-[24px] font-[700] font-actay text-center mt-[20px] sm:mt-[40px]">
           <span className="text-[16px] sm:text-[24px] py-[10px] px-[20px] border border-[#FF5200] rounded-[10px]">Медиа игроки</span>

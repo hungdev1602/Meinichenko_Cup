@@ -3,11 +3,13 @@ const Section5 = () => {
   const schedule1 = [
     {
       time: "10:00 - 11:00",
-      title: "Открытие «Кубка Мельниченко»"
+      title: `Открытие «Кубка 
+      Мельниченко»`
     },
     {
       time: "10:00 - 18:00",
-      title: "Работа развлекательных зон для гостей"
+      title: `Работа развлекательных 
+      зон для гостей`
     },
     {
       time: "11:00 - 18:30",
@@ -29,7 +31,8 @@ const Section5 = () => {
     },
     {
       time: "10:00 - 17:00",
-      title: "Работа развлекательных зон для гостей"
+      title: `Работа развлекательных 
+      зон для гостей`
     },
     {
       time: "14:00 - 15:00 ",
@@ -37,29 +40,32 @@ const Section5 = () => {
     },
     {
       time: "14:30 - 15:30",
-      title: "Полуфинал и Финал «Кубка Мельниченко»"
+      title: `Полуфинал и Финал 
+      «Кубка Мельниченко»`
     },
     {
       time: "15:45 - 16:15",
-      title: "Выставочный матч звезд РПЛ и медиа Лиги"
+      title: `Выставочный матч звезд 
+      РПЛ и медиа Лиги`
     },
     {
       time: "16:30 - 17:00",
-      title: "Награждение победителей «Кубка Мельниченко»"
+      title: `Награждение победителей 
+      «Кубка Мельниченко»`
     }
   ]
   return (
     <>
       <div className="mt-[80px] sm:mt-[130px]" id="schedule">
-        <div className="uppercase text-center text-[32px] md:text-[48px] font-[700] font-actay">расписание фестиваля</div>
+        <div className="uppercase text-center text-[24px] sm:text-[32px] md:text-[48px] font-[700] font-actay">расписание фестиваля</div>
 
         <div className="mt-[63px] grid grid-cols-1 lg:grid-cols-2 gap-[45px] lg:gap-[20px]">
           <div className="border border-[#FF5200] pr-0 pl-[15px] sm:px-[32px] pt-[50px] lg:pt-[68px] pb-[10px] rounded-[20px] relative">
             {
               schedule1.map((item, index) => (
-                <div className="flex items-center gap-[8px] sm:gap-[28px] mb-[20px] text-[10px] sm:text-[13px] lg:text-[16px]" key={index}>
+                <div className="flex items-center gap-[17px] sm:gap-[28px] mb-[20px] text-[14px] sm:text-[13px] lg:text-[17px]" key={index}>
                   <span className="">{item.time}</span>
-                  <span className="">{item.title}</span>
+                  <span className="whitespace-pre-line">{item.title}</span>
                 </div>
               ))
             }
@@ -68,9 +74,9 @@ const Section5 = () => {
           <div className="border border-[#FF5200] pr-0 pl-[15px] sm:px-[32px] pt-[50px] lg:pt-[68px] pb-[10px] rounded-[20px] relative">
             {
               schedule2.map((item, index) => (
-                <div className="flex items-center gap-[8px] sm:gap-[28px] mb-[20px] text-[10px] sm:text-[13px] lg:text-[16px]" key={index}>
+                <div className="flex items-center gap-[17px] sm:gap-[28px] mb-[20px] text-[14px] sm:text-[13px] lg:text-[17px]" key={index}>
                   <span className="">{item.time}</span>
-                  <span className="">{item.title}</span>
+                  <span className="whitespace-pre-line">{item.title}</span>
                 </div>
               ))
             }

@@ -48,8 +48,8 @@ const Section3 = () => {
   булит`
   return (
     <>
-      <div className="mt-[80px] sm:mt-[130px]">
-        <div className="text-[24px] sm:text-[48px] font-[700] font-actay text-center mb-[30px]">Дисциплины</div>
+      <div className="mt-[80px] sm:mt-[130px]" id="disciplines">
+        <div className="text-[24px] sm:text-[48px] font-[700] font-actay text-center mb-[30px] uppercase">Дисциплины</div>
 
         {/* On PC */}
         <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[10px] lg:gap-[20px]">

@@ -64,7 +64,7 @@ const OnlineBroadcast = () => {
             borderRadius: "20px",
           }}
         ></iframe>
-        <div className="text-[14px] w-[204px] sm:w-full sm:text-[32px] font-[700] font-actay text-center mt-[20px] sm:mt-[50px] mx-auto sm:mx-0">
+        <div className="text-[14px] w-[300px] sm:w-full sm:text-[32px] font-[700] font-actay text-center mt-[20px] sm:mt-[50px] mx-auto sm:mx-0">
           Подписывайтесь на нас в социальных сетях
         </div>
 
