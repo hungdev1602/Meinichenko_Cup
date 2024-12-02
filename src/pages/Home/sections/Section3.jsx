@@ -142,12 +142,12 @@ const Section3 = () => {
             {/* 1 Item */}
             <div className="h-[50px] pl-[10px] pt-[10px] pb-[14px] border border-[#FF5200] rounded-[12px]">
               <div className="text-[10px] font-[400] text-[#ffffffb8] mb-[-10px]">02/</div>
-              <div className="text-[12px] font-[500] pl-[33px] uppercase">3х3 футбол</div>
+              <div className="text-[12px] font-[500] pl-[38px] uppercase">3х3 футбол</div>
             </div>
             {/* 2 Item */}
             <div className="h-[50px] pl-[10px] pt-[10px] pb-[14px] border border-[#FF5200] rounded-[12px]">
               <div className="text-[10px] font-[400] text-[#ffffffb8] mb-[-10px]">03/</div>
-              <div className="text-[12px] font-[500] pl-[33px] uppercase">2х2 футбол</div>
+              <div className="text-[12px] font-[500] pl-[38px] uppercase">2х2 футбол</div>
             </div>
             {/* 6 Item */}
             <div className="h-[50px] pl-[10px] pt-[10px] pb-[14px] border border-[#FF5200] rounded-[12px]">
