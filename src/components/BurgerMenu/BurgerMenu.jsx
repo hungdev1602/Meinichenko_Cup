@@ -8,7 +8,7 @@ import fox from "/images/fox.png"
 const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
   return (
     <>
-      <div className={"fixed top-0 left-0 right-0 bg-[#00234A] h-full z-[9999] pt-[10px] opacity-0 " + (openBurgerMenu ? "visible opacity-100" : "invisible opacity-0")}>
+      <div className={"fixed top-0 left-0 right-0 bg-[#00234A] h-full z-[9999] pt-[10px] transition duration-800 " + (openBurgerMenu ? "visible opacity-100" : "invisible opacity-0")}>
         <div className="container mx-auto">
           <div className="pr-[10px] border border-[#FF5200] rounded-[10px] py-[15px] pl-[15px] flex items-center justify-between">
             <div 
@@ -43,11 +43,14 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
                 </NavLink>
               </li>
               <li className="">
-                <a
-                  href={'/command'}
+                <NavLink
+                  to={'/command'}
+                  onClick={() => {
+                    setOpenBurgerMenu(false)
+                  }}
                 >
                   Команды
-                </a>
+                </NavLink>
               </li>
               <li className="">
                 <NavLink
@@ -117,3 +120,4 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
 }
 
 export default BurgerMenu
+
