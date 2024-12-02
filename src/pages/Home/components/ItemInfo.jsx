@@ -8,6 +8,7 @@ const ItemInfo = (props) => {
     title,
     text
   } = props;
+
   return (
     <>
       <div className="pt-[15px] sm:pt-[25px] pl-[15px] sm:pl-[25px] bg-[#4C6580] h-[154px] sm:h-[230px] md:h-[245px] xl:h-[261px] rounded-[15px] truncate relative">
@@ -15,7 +16,7 @@ const ItemInfo = (props) => {
         <div className="xl:text-[24px] font-[700] mt-[25px] lg:mt-[35px] font-actay">{title}</div>
         <div className={"w-[300px] sm:w-[460px] xl:w-[526px] text-[12px] xl:text-[24px] font-[300] mt-0 sm:mt-[9px] whitespace-normal leading-[15px] sm:leading-[30px] whitespace-pre-line"}>{text}</div>
 
-        <img src={img} alt="" className="w-[80px] sm:w-[130px] xl:w-[155px] h-auto absolute top-0 right-0 z-[0]"/>
+        <img src={img} alt="" className="w-[80px] sm:w-[130px] xl:w-[170px] h-auto absolute top-0 right-0 z-[0]"/>
       </div>
     </>
   )

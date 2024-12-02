@@ -45,10 +45,10 @@ const Section1 = () => {
             {/* Left */}
             <div className="flex items-center gap-[20px]">
               <div className="py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px]">
-                <span className="text-[14px] md:text-[18px] font-[700] font-actay">14-15 <br /> декабря</span>
+                <span className="text-[11px] md:text-[18px] font-[700] font-actay">14-15 <br /> декабря</span>
               </div>
               <a href="/" className="py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px] relative">
-                <span className="text-[14px] md:text-[18px] font-[700] font-actay">Кросноярск, <br /> Футбол - Арена “Енисей”</span>
+                <span className="text-[11px] md:text-[18px] font-[700] font-actay">Кросноярск, <br /> Футбол - Арена “Енисей”</span>
                 <img 
                   src={arrow} 
                   alt="" 
@@ -61,7 +61,7 @@ const Section1 = () => {
             <div className="mt-[8px] md:mt-0 ml-auto md:ml-0 flex items-center gap-[8px] sm:block">
               <div className="text-[14px] md:text-[20px] font-[400] mb-0 sm:mb-[5px]">приглашенные гости</div>
               <div className="flex items-center">
-                <div className="w-[34px] sm:w-[50px] md:w-[66px] h-[34px] sm:h-[50px] md:h-[66px] rounded-full bg-[#FF5200] inline-flex items-center justify-center text-[30px] relative z-[5]">+</div>
+                <div className="w-[34px] sm:w-[50px] md:w-[66px] h-[34px] sm:h-[50px] md:h-[66px] rounded-full bg-[#FF5200] inline-flex items-center justify-center text-[20px] sm:text-[50px] relative z-[5]">+</div>
                 <div 
                   className="w-[34px] sm:w-[50px] md:w-[66px] h-[34px] sm:h-[50px] md:h-[66px] border-[2px] border-[#FF5200] rounded-full truncate ml-[-10px] md:ml-[-15px] relative z-[4]" 
                 >

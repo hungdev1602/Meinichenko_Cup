@@ -112,8 +112,8 @@ const Section6 = () => {
             ))
           }
         </div> */}
-        <img src={bodyDecor1} alt="" className="absolute sm:bottom-[-200px] top-0 left-[-90px] sm:left-[-150px] z-[-1] w-[294px] sm:w-[350px] h-auto"/>
-        <img src={bodyDecor2} alt="" className="absolute sm:bottom-[300px] bottom-[10px] right-[-40px] sm:right-[-350px] z-[-1] w-[294px] sm:w-[350px] h-auto"/>
+        <img src={bodyDecor1} alt="" className="absolute top-0 sm:top-[1300px] left-[-90px] sm:left-[-150px] z-[-1] w-[294px] sm:w-[350px] h-auto"/>
+        <img src={bodyDecor2} alt="" className="absolute sm:bottom-[300px] bottom-[55px] right-[-120px] sm:right-[-100px] z-[-1] w-[294px] sm:w-[350px] h-auto"/>
       </div>
     </>
   )
