@@ -103,7 +103,7 @@ const Section3 = () => {
         </div>
         
         {/* On Mobile */}
-        <div className="grid grid-cols-2 gap-[10px]">
+        <div className="grid grid-cols-2 gap-[10px] sm:hidden">
           {/* Col1 */}
           <div className="flex flex-col gap-[10px]">
             {/* 1 Item */}
