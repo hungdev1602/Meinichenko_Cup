@@ -97,10 +97,10 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
           </div>
 
           <div className="mt-[40px] grid grid-cols-2 gap-[10px]">
-            <a href="/" target="_blank" className="block py-[19px] px-[73px] bg-[#111821] rounded-[12px]">
+            <a href="/" target="_blank" className="w-[160px] h-[69px] flex items-center justify-center bg-[#111821] rounded-[12px]">
               <LiaTelegramPlane size={35}/>
             </a>
-            <a href="https://vk.com/melnichenkocup" target="_blank" className="block py-[19px] px-[73px] bg-[#111821] rounded-[12px]">
+            <a href="https://vk.com/melnichenkocup" target="_blank" className="w-[160px] h-[69px] flex items-center justify-center bg-[#111821] rounded-[12px]">
               <SlSocialVkontakte size={35}/>
             </a>
           </div>
