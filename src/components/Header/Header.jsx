@@ -10,7 +10,7 @@ const Header = ({ setOpenBurgerMenu }) => {
   const data = [
     {
       title: "Организаторы",
-      href: "#organizers"
+      href: "/organizers"
     },
     {
       title: "Команды",

@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Teams from "./pages/Teams/Teams";
 import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
 import { useState } from "react";
+import Organizers from "./pages/Organizers/Organizers";
 
 const App = () => {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false)
@@ -20,6 +21,7 @@ const App = () => {
           setOpenBurgerMenu={setOpenBurgerMenu}/>
         <Routes>
           <Route path="/command" element={<Teams />} />
+          <Route path="/organizers" element={<Organizers />} />
         </Routes>
       </div>
       <Routes>

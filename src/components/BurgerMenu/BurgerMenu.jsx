@@ -47,8 +47,8 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
             <ul className="flex flex-col gap-[15px] text-[14px]">
               <li className="">
                 <NavLink
-                  to={'#organizers'}
-                  onClick={(e) => handleScrollToSection(e, '#organizers')}
+                  to={'/organizers'}
+                  onClick={() => setOpenBurgerMenu(false)}
                 >
                   Организаторы
                 </NavLink>

@@ -100,8 +100,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink 
-                    to="#organizers" 
-                    onClick={(e) => handleScrollToSection(e, "#organizers")}
+                    to="/organizers" 
                   >
                     Организаторы
                   </NavLink>
