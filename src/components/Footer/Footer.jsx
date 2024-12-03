@@ -109,7 +109,7 @@ const Footer = () => {
             </div>
             {/* Right */}
             <div className="flex gap-[20px] mt-[15px] sm:mt-0">
-              <a href="/" target="_blank" className="w-[165px] lg:w-[275px] h-[69px] sm:h-[80px] lg:h-[100px] inline-flex justify-center items-center bg-[#00234A] rounded-[20px]">
+              <a href="https://t.me/MelnichenkoCup" target="_blank" className="w-[165px] lg:w-[275px] h-[69px] sm:h-[80px] lg:h-[100px] inline-flex justify-center items-center bg-[#00234A] rounded-[20px]">
                 <LiaTelegramPlane size={size}/>
               </a>
               <a href="https://vk.com/melnichenkocup" target="_blank" className="w-[165px] lg:w-[275px] h-[69px] sm:h-[80px] lg:h-[100px] inline-flex justify-center items-center bg-[#00234A] rounded-[20px]">

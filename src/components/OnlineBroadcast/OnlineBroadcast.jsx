@@ -70,7 +70,7 @@ const OnlineBroadcast = () => {
 
         <div className="mt-[15px] sm:mt-[40px] flex justify-center gap-[20px]">
           <a
-            href="/"
+            href="https://t.me/MelnichenkoCup"
             target="_blank"
             className="w-[144px] sm:w-[220px] md:w-[260px] lg:w-[290px] h-[55px] sm:h-[95px] md:h-[110px] lg:h-[150px] inline-flex justify-center items-center bg-[#111821] rounded-[12px] sm:rounded-[20px]"
           >

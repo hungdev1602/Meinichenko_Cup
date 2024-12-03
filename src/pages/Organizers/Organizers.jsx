@@ -5,9 +5,11 @@ const Organizers = () => {
   const text = ` занимается развитием 
   промышленных городов 
 и территорий в разных регионах России. 
-Основан предпринимателем Андреем 
-Мельниченко.
+Основан предпринимателем 
+Андреем Мельниченко.
 `
+  const text2 = `Основан предпринимателем 
+  Андреем Мельниченко.`
   return (
     <>
       <div className="mt-[40px] sm:mt-[60px] mb-[90px] sm:mb-[130px]">
@@ -19,7 +21,7 @@ const Organizers = () => {
           {/* Left */}
           <div className="w-[100%] md:w-[42%] text-[14px] sm:text-[18px] lg:text-[24px] text-center md:text-start">
             <div className="hidden sm:block "><span className="font-actay"><b>Фонд Мельниченко</b></span> занимается развитием промышленных городов и территорий в разных регионах России.</div>
-            <div className="hidden sm:block mt-[25px] ">Основан предпринимателем Андреем Мельниченко.</div>
+            <div className="hidden sm:block mt-[25px] whitespace-pre-line">{text2}</div>
             <div className="block sm:hidden text-[14px] text-center whitespace-pre-line"><b className="font-actay">Фонд Мельниченко</b> {text}</div>
           </div>
 
