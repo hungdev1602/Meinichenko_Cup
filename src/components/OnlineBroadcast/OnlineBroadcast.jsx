@@ -77,7 +77,7 @@ const OnlineBroadcast = () => {
             <LiaTelegramPlane size={size} />
           </a>
           <a
-            href="/"
+            href="https://vk.com/melnichenkocup"
             target="_blank"
             className="w-[144px] sm:w-[220px] md:w-[260px] lg:w-[290px] h-[55px] sm:h-[95px] md:h-[110px] lg:h-[150px] inline-flex justify-center items-center bg-[#111821] rounded-[12px] sm:rounded-[20px]"
           >

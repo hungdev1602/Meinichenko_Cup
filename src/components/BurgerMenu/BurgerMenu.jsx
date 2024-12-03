@@ -100,7 +100,7 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
             <a href="/" target="_blank" className="block py-[19px] px-[73px] bg-[#111821] rounded-[12px]">
               <LiaTelegramPlane size={35}/>
             </a>
-            <a href="/" target="_blank" className="block py-[19px] px-[73px] bg-[#111821] rounded-[12px]">
+            <a href="https://vk.com/melnichenkocup" target="_blank" className="block py-[19px] px-[73px] bg-[#111821] rounded-[12px]">
               <SlSocialVkontakte size={35}/>
             </a>
           </div>
