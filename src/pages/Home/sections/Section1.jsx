@@ -49,7 +49,7 @@ const Section1 = () => {
               <div className="py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px]">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">14-15 <br /> декабря</span>
               </div>
-              <a href="/" className="w-[252px] sm:w-[430px] py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px] relative">
+              <a href="https://yandex.ru/maps/org/futbol_arena_yenisey/1250157435/?ll=92.983699%2C56.057639&z=16" target="_blank" className="w-[252px] sm:w-[430px] py-[13px] pl-[15px] pr-[15px] sm:pr-[135px] bg-[#11182181] rounded-[15px] relative">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">Кросноярск, <br /> Футбол - Арена “Енисей”</span>
                 <img 
                   src={arrow} 
