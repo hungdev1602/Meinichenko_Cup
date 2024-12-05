@@ -9,6 +9,10 @@ const Header = ({ setOpenBurgerMenu }) => {
   const navigate = useNavigate()
   const data = [
     {
+      title: "Главная",
+      href: "#ticket"
+    },
+    {
       title: "Организаторы",
       href: "/organizers"
     },

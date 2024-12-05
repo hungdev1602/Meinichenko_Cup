@@ -4,10 +4,11 @@ import decor1 from "/images/team_decor_1.png"
 import decor2 from "/images/team_decor_2.png"
 import decor3 from "/images/team_decor_3.png"
 import fox from "/images/fox.png"
+import { Link } from "react-router-dom"
 const Section1 = () => {
   return (
     <>
-      <div className="mt-[40px] sm:mt-[73px] mb-[90px] sm:mb-[130px] relative">
+      <div className="mt-[40px] sm:mt-[73px] mb-[90px] sm:mb-[130px] relative z-[2]">
         <div className="text-[24px] sm:text-[48px] font-[700] font-actay uppercase text-center mb-[30px]">Команды участников</div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
@@ -59,10 +60,13 @@ const Section1 = () => {
             team={"-"}
           />
         </div>
-        <img src={fox} alt="" className="absolute right-[-50px] md:right-[180px] bottom-[-200px] md:bottom-[-50px] w-[251px] h-[236px] z-[-1]" />
+        <Link to='/'>
+          <img src={fox} alt="" className="absolute right-[-50px] md:right-[180px] bottom-[-200px] md:bottom-[-50px] w-[251px] h-[236px] z-[1]" />
+        </Link>
       </div>
     </>
   )
 }
 
 export default Section1
+
