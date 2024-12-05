@@ -26,7 +26,7 @@ const Section5 = () => {
   ]
   const schedule2 = [
     {
-      time: "13:00 - 14:00",
+      time: "10:00 - 14:00",
       title: "Отборочные матчи"
     },
     {

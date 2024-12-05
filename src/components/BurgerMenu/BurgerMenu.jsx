@@ -45,6 +45,14 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
 
           <div className="text-center mt-[20px]">
             <ul className="flex flex-col gap-[15px] text-[14px]">
+            <li className="">
+                <NavLink
+                  to={'#ticket'}
+                  onClick={(e) => handleScrollToSection(e, '#ticket')}
+                >
+                  Главная
+                </NavLink>
+              </li>
               <li className="">
                 <NavLink
                   to={'/organizers'}

@@ -29,7 +29,7 @@ const Section1 = () => {
 
   return (
     <>
-      <div className="h-[470px] sm:h-[680px] md:h-[734px] bg-section1 bg-cover pt-[52px] sm:pt-[70px] pb-[30px]" id="organizers">
+      <div className="h-[470px] sm:h-[680px] md:h-[734px] bg-section1 bg-cover pt-[52px] sm:pt-[70px] pb-[30px]" id="ticket">
         <div className="container mx-auto">
           <div className="w-[323px] h-[199px] sm:w-[452px] sm:h-[280px] md:w-[500px] md:h-[310px] xl:w-[521px] xl:h-[321px] mb-[30px] sm:mb-0 truncate mx-auto">
             <img 

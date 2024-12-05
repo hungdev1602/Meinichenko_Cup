@@ -6,6 +6,7 @@ import Teams from "./pages/Teams/Teams";
 import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
 import { useState } from "react";
 import Organizers from "./pages/Organizers/Organizers";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false)
@@ -19,6 +20,7 @@ const App = () => {
       <div className="container mx-auto">
         <Header 
           setOpenBurgerMenu={setOpenBurgerMenu}/>
+        <ScrollToTop />
         <Routes>
           <Route path="/command" element={<Teams />} />
           <Route path="/organizers" element={<Organizers />} />
