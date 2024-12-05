@@ -54,7 +54,7 @@ const OnlineBroadcast = () => {
         </div>
 
         <iframe
-          src="https://vk.com/video_ext.php?oid=-147144009&id=456239714&hd=2&autoplay=1"
+          src="https://vk.com/video_ext.php?oid=-147144009&id=456239714&hd=2"
           width={widthForVideo}
           height={height}
           allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
