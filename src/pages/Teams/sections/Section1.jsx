@@ -41,22 +41,22 @@ const Section1 = () => {
           />
           <TeamInfoType2 
             title={`Красноярск СУЭК`}
-            team="СК 1"
+            team="Крепкий орешек"
             img={decor2}
             checkImg={true}
           />
           <TeamInfoType1 
             title={"Красноярск СУЭК"}
-            team={"СК 2"}
+            team={"Красноярский ротор"}
           />
           <TeamInfoType2 
             title={`Красноярск СУЭК`}
-            team="СК 3"
+            team="Термококс"
             img={decor3}
             checkImg={true}
           />
           <TeamInfoType1 
-            title={`"ООО"СУЭК-ХАКАСИЯ""`}
+            title={`ООО"СУЭК-ХАКАСИЯ"`}
             team={"-"}
           />
         </div>
