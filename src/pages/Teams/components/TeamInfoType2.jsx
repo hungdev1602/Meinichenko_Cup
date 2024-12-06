@@ -14,7 +14,7 @@ const TeamInfoType2 = (props) => {
   return (
     <>
       <div className="p-[10px] sm:p-[15px] rounded-[10px] border border-[#FF5200] relative">
-        <div className="text-[12px] sm:text-[14px] text-[#CCD3DB] font-[400]">{title}</div>
+        <div className="text-[10px] sm:text-[14px] text-[#CCD3DB] font-[400]">{title}</div>
         <div className={css}>{team}</div>
 
         {
