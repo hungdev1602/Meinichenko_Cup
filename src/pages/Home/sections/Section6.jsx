@@ -6,11 +6,12 @@ import guest1 from "/images/guest_1-1.png"
 import guest2 from "/images/guest_2-1.png"
 import guest3 from "/images/guest_3-1.png"
 import guest4 from "/images/guest_4-1.png"
-import guest5 from "/images/guest_5-1.png"
+import guest5 from "/images/guest_10-1.png"
 import guest6 from "/images/guest_6-1.png"
 import guest7 from "/images/guest_7-1.png"
 import guest8 from "/images/guest_8-1.png"
 import guest9 from "/images/guest_9-1.png"
+import guest10 from "/images/guest_11-1.png"
 const Section6 = () => {
   const data = [
     {
@@ -30,9 +31,17 @@ const Section6 = () => {
     {
       img: guest4,
       name: "Федос"
+    },
+    {
+      img: guest5,
+      name: "Виктор Блатов"
     }
   ]
   const data2 = [
+    {
+      img: guest10,
+      name: "Владимир Быстров",
+    },
     {
       img: guest6,
       name: "Денис Глушаков",
@@ -48,7 +57,7 @@ const Section6 = () => {
     {
       img: guest9,
       name: "Юрий Жирков",
-    },
+    }
   ]
   const data3 = [
     {
@@ -69,10 +78,11 @@ const Section6 = () => {
           <span className="text-[16px] sm:text-[24px] py-[10px] px-[20px] border border-[#FF5200] rounded-[10px]">Медиа игроки</span>
         </div>
 
-        <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-center lg:justify-between sm:flex-wrap lg:flex-nowrap gap-[10px] mt-[30px]">
+        {/* 1 row */}
+        <div className="grid grid-cols-2 place-items-center sm:flex sm:justify-center sm:items-center sm:flex-wrap gap-[10px] sm:gap-[25px] mt-[30px]">
           {
             data.map((item, index) => (
-              <div className="h-[245px] sm:h-[355px]" key={index}>
+              <div className={"h-[245px] sm:h-[355px] " + (index === 4 ? "ml-[170px] sm:ml-0" : "")} key={index}>
                 <div className="w-[170px] sm:w-[220px] xl:w-[275px] h-[170px] sm:h-[220px] xl:h-[275px] truncate rounded-full">
                   <img src={item.img} alt="" className={"w-full h-full object-cover "}/>
                 </div>
@@ -81,15 +91,16 @@ const Section6 = () => {
             ))
           }
         </div>
-
+        
         <div className="text-[24px] font-[700] font-actay text-center mt-[40px]">
           <span className="text-[16px] sm:text-[24px] py-[10px] px-[20px] border border-[#FF5200] rounded-[10px]">Профессионалы</span>
         </div>
 
-        <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-center lg:justify-between sm:flex-wrap lg:flex-nowrap gap-[10px] mt-[30px]">
+        {/* 2 row */}
+        <div className="grid grid-cols-2 place-items-center sm:flex sm:justify-center sm:items-center sm:flex-wrap gap-[10px] sm:gap-[25px] mt-[30px]">
           {
             data2.map((item, index) => (
-              <div className="h-[245px] sm:h-[355px]" key={index}>
+              <div className={"h-[245px] sm:h-[355px] " + (index === 4 ? "ml-[170px] sm:ml-0" : "")} key={index}>
                 <div className="w-[170px] sm:w-[220px] xl:w-[275px] h-[170px] sm:h-[220px] xl:h-[275px] truncate rounded-full">
                   <img src={item.img} alt="" className={"w-full h-full object-cover "}/>
                 </div>
