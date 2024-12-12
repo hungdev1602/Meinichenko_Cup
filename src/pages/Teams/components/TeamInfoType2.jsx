@@ -9,7 +9,7 @@ const TeamInfoType2 = (props) => {
     checkImg = false
   } = props;
 
-  const css = check ? "text-[10px] sm:text-[19px] xl:text-[18px] font-[700] font-actay absolute bottom-[14px]" : "text-[11px] sm:text-[19px] xl:text-[18px] font-[700] font-actay mt-[88px]";
+  const css = check ? "text-[10px] sm:text-[19px] xl:text-[18px] font-[700] font-actay absolute bottom-[10px] sm:bottom-[14px]" : "text-[11px] sm:text-[19px] xl:text-[18px] font-[700] font-actay mt-[88px]";
   const cssImg = checkImg ? "w-[82px] h-[82px] absolute bottom-[5px] right-[10px]" : "w-[82px] h-[82px] absolute top-0 right-[10px]";
   return (
     <>

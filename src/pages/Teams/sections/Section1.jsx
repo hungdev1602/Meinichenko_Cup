@@ -40,24 +40,25 @@ const Section1 = () => {
             team="Енисей-СГК"
           />
           <TeamInfoType2 
-            title={`Красноярск СУЭК`}
+            title={`АО «СУЭК-Красноярск»`}
             team="Крепкий орешек"
             img={decor2}
             checkImg={true}
           />
           <TeamInfoType1 
-            title={"Красноярск СУЭК"}
+            title={"АО «СУЭК-Красноярск»"}
             team={"Красноярский ротор"}
           />
           <TeamInfoType2 
-            title={`Красноярск СУЭК`}
+            title={`АО «СУЭК-Красноярск»`}
             team="Термококс"
             img={decor3}
+            check={true}
             checkImg={true}
           />
           <TeamInfoType1 
             title={`ООО"СУЭК-ХАКАСИЯ"`}
-            team={"-"}
+            team={`ФСХ - Футбольнаясемья хакасии`}
           />
         </div>
         <Link to='/'>
