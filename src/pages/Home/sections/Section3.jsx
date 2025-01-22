@@ -13,7 +13,7 @@ const Section3 = () => {
     },
     {
       id: "06/",
-      text: "футбольный булит",
+      text: "футбольный буллит",
     },
     {
       id: "08/",
@@ -45,7 +45,7 @@ const Section3 = () => {
   const text3 = `футбольный
   челлендж`
   const text4 = `футбольный
-  булит`
+  буллит`
   return (
     <>
       <div className="mt-[80px] sm:mt-[130px]" id="disciplines">
